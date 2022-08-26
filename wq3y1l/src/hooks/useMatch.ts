@@ -25,7 +25,7 @@ export function useMatch(matchId: string | undefined) {
     }
     axios
       .get(
-        `https://europe.api.riotgames.com/lol/match/v5/matches/${matchId}?api_key=RGAPI-1ef14124-71b9-41c5-b5bb-a8563ffa939c`
+        `https://europe.api.riotgames.com/lol/match/v5/matches/${matchId}?api_key=`
       )
       .then((response) => {
         setMatch(response.data);
