@@ -8,7 +8,7 @@ export function useMatchIds(summonerId: string | undefined) {
     if (!summonerId) return;
     axios
       .get(
-        `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${summonerId}/ids?start=0&count=20&api_key=RGAPI-1ef14124-71b9-41c5-b5bb-a8563ffa939c`
+        `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${summonerId}/ids?start=0&count=20&api_key=`
       )
       .then((response) => setMatchIds(response.data));
   }, [summonerId]);
