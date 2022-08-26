@@ -32,7 +32,7 @@ export function useSummonerName(summonerName: string): ISummonerHookResponse {
       setIsLoading(true);
       axios
         .get(
-          `https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=RGAPI-1ef14124-71b9-41c5-b5bb-a8563ffa939c`
+          `https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=`
         )
         .then((response) => {
           setSummoner(response.data);
